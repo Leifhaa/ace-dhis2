@@ -1,0 +1,17 @@
+{
+    values: {
+        resource: "dataValueSets",
+        params: {
+            orgUnit: props.orgUnit, //id of organisation
+            dataSet: "ULowA8V3ucd", //dataSet id of Life-saving commodities
+            period: period, //timeperiod
+        }
+    },
+    products: {
+        resource: "dataElements",
+        params: {
+            fields: ["id", "displayName"],
+            filter: "displayName:like:Commodities",
+        }
+    }
+}
